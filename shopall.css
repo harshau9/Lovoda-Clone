@@ -1,0 +1,79 @@
+#prd>h2{
+  font-weight: 400;
+  font-size: 39px;
+  letter-spacing: 0.6px;
+  display: block;
+  width:72%;
+  margin:auto;
+
+}
+#prd .all-prd{
+  width:72%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+ 
+  /* border: 2px solid black; */
+}
+
+.all-prd>div{
+  width:24.3%;
+  min-width: 250px;
+  /* padding: 10px 12px; */
+  /* border: 2px solid black; */
+  cursor: pointer;
+  margin:15px 0;
+  position: relative;
+
+ }
+ .all-prd>div>img{
+  width:100%;
+ }
+ .all-prd>div h5{
+  padding-top: 7px;
+  margin-bottom: 5px;
+  font-size: 12.5px;
+  font-weight: 200;
+  letter-spacing: 0.4px;
+
+ }
+ .all-prd>div h4{
+  padding-top: 7px;
+  letter-spacing: 0.4px;
+ }
+ .flt{
+  width: 72%;
+  margin: auto;
+  text-align: right;
+  /* margin-right: 20px; */
+ }
+ .flt label{
+  color: gray;
+  font-size: 13px;
+ }
+ #sortName{
+  color: gray;
+  font-size: 13px;
+ }
+
+ .all-prd button{
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: .1rem;
+  padding:4px 6px;
+  cursor: pointer;
+  font-weight: 200;
+  background-color: #fffff5;
+  border: 0.5px solid #c9ac92;
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+ }
+ .all-prd button:hover{
+  background-color: #fddec2;
+ }
+ 
