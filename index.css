@@ -121,16 +121,23 @@ bottom:0;
 #hero{
 /* border: 2px solid black;                                          comment this later */
 background-image: url("images/wel2.png");
-height: 700px;
+height: 110vh;
 width: 100%;
 background-size: cover;
+background-position: top 25% right 48%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-direction: column;
+padding-bottom: 90px;
+/* background-size: cover;
 
 background-position: center center;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content:end;
-padding-bottom: 90px;
+padding-bottom: 90px; */
 }
 #hero h2{
   /* width: 100%; */
@@ -510,11 +517,16 @@ list-style: none;
 @media(max-width:790px){
 #hero{
   /* width:160%; */
-  /* height:70vh; */
+  height:70vh;
   /* display: block; */
+
+/* 
   padding: 0 80px;
   background-size:cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+
+
   /* background-position: */
 }
 #product1 .pro-container {
@@ -533,5 +545,9 @@ list-style: none;
                         "f f"
                         "g h"
                         "i .";
+}
+form {
+  
+  width:80%
 }
 }
