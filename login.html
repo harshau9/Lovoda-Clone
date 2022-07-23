@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart</title>
+  <title>Login</title>
   <link href='https://css.gg/heart.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/19b91a59a7.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="log.css">
 </head>
-
-
 <body>
   <p id="text1">Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
   <hr>
@@ -37,40 +36,21 @@
     </div>
 
   </section>
-  <hr>
-  <div id="cartpg">
-  <h2>Your cart</h2>
-  <h4><a href="index.html">Continue shopping</a></h4>
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Name</th>
-        <th>Quantity</th>
-        <th>Remove</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody id="body">
-      
-    </tbody>
-  </table>
-<div id ="final">
-  <div id="calc">
-    <h3>Subtotal: $<span id="total-price">0</span>.00</h3>
-    <h6>or 4 interest-free payments of $14.00 with</h6>
-    <img id="atf" src="images/cart/aft.png" alt="">
-    <h6>Taxes and shipping calculated at checkout</h6>
-  </div>
-  <div id="paybtn">
-    <a href="checkout.html"><button class="chkout">Check out</button></a>
-    <button><a href="https://www.shopify.com/blog/shop-pay-checkout"><img src="images/cart/shop.png"/></a></button>
-    <button><a href="www.paypal.com"><img src="images/cart/pal.png"/></a></button>
-    <button><a href="https://pay.google.com/about/"><img src="images/cart/gpay.png"/></a></button>
+<hr>
+
+
+  <div id="login">
+    <h2>Login</h2>
+        <form>
+          <input type="email" id="email" placeholder="Email">
+          <input type="password" id="password" placeholder="Password">
+          <input type="submit" value="Signin">
+        </form>
+        <a href="signup.html">Create Account</a>
   </div>
 
-</div>
+
+<hr>
   <footer class="section-p1">
     <div class="lastbox">
       <div class="twobox">
@@ -140,5 +120,33 @@
 </div>
   </footer>
 </body>
-<script src="cart.js"></script>
+<script>
+  let form = document.querySelector("form");
+  let signupLS=JSON.parse(localStorage.getItem("signup")) || [];
+
+  form.addEventListener("submit",function(e) {
+    e.preventDefault();
+    if(signupLS.length===0){
+      alert("no user til now");
+      return;
+    }
+    let obj={
+      email:form.email.value,
+      password:form.password.value,
+    }
+let flag=false;
+signupLS.forEach(function(ele){
+if(ele.email==obj.email && ele.password==obj.password) {
+  flag=true;
+localStorage.setItem('signin',JSON.stringify(ele));/*storing obj not arr as it is sign in i.e, one user*/
+alert("success");
+window.location.href="index.html";
+}
+  })
+  if(flag==false){
+     alert("user not found");
+  }
+  // alert("user not found");
+})
+</script>
 </html>

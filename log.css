@@ -1,0 +1,68 @@
+#login{
+  width:35%;
+  height:auto;
+  padding: 48px 40px 36px;
+  margin:auto;
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
+  text-align: center;
+  margin-bottom: 100px;
+}
+* {
+  box-sizing: border-box;
+  margin:0px;
+}
+#login>h2{
+margin-bottom: 50px;
+letter-spacing: 3px;
+}
+#login a{
+  color: gray;
+  font-size: 14px;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  /* border-radius: 2px; */
+  box-sizing: border-box;
+  /* margin-top: 6px; */
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  /* width: 100%; */
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform .2s;
+}
+input[type="submit"]:hover{
+  transform: scale(1.05);
+}
+#signup{
+  width:35%;
+  height:auto;
+  padding: 48px 40px 36px;
+  margin:auto;
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
+  text-align: center;
+  margin-bottom: 100px;
+}
+#signup>h2{
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  }
