@@ -1,6 +1,6 @@
 <h1 align="center">Lovoda Clone</h1> 
 <br />
-#### Lovoda is women's accessiories based website which allow's user to buy different accessories like earings , bracelets , necklaces and many more
+<p>Lovoda is women's accessiories based website which allow's user to buy different accessories like earings , bracelets , necklaces and many more</p>
 #### Tech Stack : HTML, CSS, JAVASCRIPT
 #### Project code : unwieldy-throat-4383
 <br />
