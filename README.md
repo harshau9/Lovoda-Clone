@@ -3,7 +3,7 @@
 #### Project code : unwieldy-throat-4383
 <h1 align="center">Lovoda Clone</h1> 
 <br />  
-####   Lovoda is women's accessiories based website which allow's user to buy different accessories like earings , bracelets , necklaces and many more
+#### Lovoda is women's accessiories based website which allow's user to buy different accessories like earings , bracelets , necklaces and many more
 
 <br />
 
